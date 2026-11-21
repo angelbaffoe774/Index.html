@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trackone Data Hub GH | Affordable Data Bundles & Checkers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased flex flex-col min-h-screen">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-2.5 group">
+        <span aria-hidden="true" class="w-9 h-9 rounded-xl bg-slate-900 text-white font-bold text-lg flex items-center justify-center shadow-sm group-hover:bg-emerald-600 transition-colors">
+          D
+        </span>
+        <span class="font-bold text-base sm:text-lg tracking-tight text-slate-900">
+          Trackone Data Hub GH
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#home" class="text-slate-900 font-semibold">Home</a>
+        <a href="#bundles" class="hover:text-slate-900 transition-colors">Buy data</a>
+        <a href="#checkers" class="hover:text-slate-900 transition-colors">Checkers</a>
+        <a href="#mashup" class="hover:text-slate-900 transition-colors">MashUp</a>
+        <a href="#track" class="hover:text-slate-900 transition-colors">Track order</a>
+        <a href="#how-to-buy" class="hover:text-slate-900 transition-colors">How to buy</a>
+        <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+      </nav>
+
+      <!-- Header CTA & Mobile Menu Button -->
+      <div class="flex items-center gap-3">
+        <a href="#bundles" class="bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm">
+          Buy data
+        </a>
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 py-3 space-y-2 text-sm font-medium text-slate-700">
+      <a href="#home" class="block py-1.5 text-slate-900 font-semibold">Home</a>
+      <a href="#bundles" class="block py-1.5 hover:text-slate-900">Buy data</a>
+      <a href="#checkers" class="block py-1.5 hover:text-slate-900">Checkers</a>
+      <a href="#mashup" class="block py-1.5 hover:text-slate-900">MashUp</a>
+      <a href="#track" class="block py-1.5 hover:text-slate-900">Track order</a>
+      <a href="#how-to-buy" class="block py-1.5 hover:text-slate-900">How to buy</a>
+      <a href="#about" class="block py-1.5 hover:text-slate-900">About</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="home" class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <div aria-hidden="true" class="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+        <div class="max-w-2xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-5">
+            Instant Mobile Money Delivery
+          </span>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            Trackone Data Hub GH
+          </h1>
+          <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+            Trackone Data Hub GH is your trusted online store for quality products at affordable prices. We are committed to providing reliable service, genuine products, and a smooth shopping experience for every customer.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#bundles" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition-colors shadow-md">
+              Buy data
+            </a>
+            <a href="#checkers" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl border border-white/15 transition-colors">
+              Result checkers
+            </a>
+            <a href="#mashup" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl border border-white/15 transition-colors">
+              MashUp packs
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-16">
+
+      <!-- Popular Bundles Section -->
+      <section id="bundles">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Popular bundles</h2>
+          <a href="#all-prices" class="text-sm font-semibold text-emerald-600 hover:text-emerald-700">
+            All prices &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <!-- MTN 1GB Card -->
+          <div onclick="openOrderModal('MTN 1GB Bundle', '₵5.20', 'MTN')" class="cursor-pointer group bg-white rounded-2xl border border-slate-200 p-5 flex items-center justify-between hover:border-amber-400 hover:shadow-md transition-all">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-400 text-slate-950 font-extrabold text-sm flex items-center justify-center shrink-0">
+                MTN
+              </div>
+              <div>
+                <p class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">1GB</p>
+                <p class="text-sm text-slate-500">MTN bundle</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="inline-block bg-slate-100 group-hover:bg-amber-50 text-slate-900 font-bold px-3.5 py-1.5 rounded-lg text-base">
+                ₵5.20
+              </span>
+            </div>
+          </div>
+
+          <!-- Telecel 10GB Card -->
+          <div onclick="openOrderModal('Telecel 10GB Bundle', '₵45.00', 'Telecel')" class="cursor-pointer group bg-white rounded-2xl border border-slate-200 p-5 flex items-center justify-between hover:border-red-500 hover:shadow-md transition-all">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-red-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">
+                TC
+              </div>
+              <div>
+                <p class="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors">10GB</p>
+                <p class="text-sm text-slate-500">Telecel bundle</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="inline-block bg-slate-100 group-hover:bg-red-50 text-slate-900 font-bold px-3.5 py-1.5 rounded-lg text-base">
+                ₵45.00
+              </span>
+            </div>
+          </div>
+
+          <!-- AirtelTigo 1GB Card -->
+          <div onclick="openOrderModal('AirtelTigo 1GB Bundle', '₵5.15', 'AirtelTigo')" class="cursor-pointer group bg-white rounded-2xl border border-slate-200 p-5 flex items-center justify-between hover:border-blue-500 hover:shadow-md transition-all">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">
+                AT
+              </div>
+              <div>
+                <p class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">1GB</p>
+                <p class="text-sm text-slate-500">AirtelTigo bundle</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="inline-block bg-slate-100 group-hover:bg-blue-50 text-slate-900 font-bold px-3.5 py-1.5 rounded-lg text-base">
+                ₵5.15
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Browse by Network Section -->
+      <section>
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Browse by network</h2>
+          <a href="#all-prices" class="text-sm font-semibold text-emerald-600 hover:text-emerald-700">
+            All prices &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <!-- MTN Network -->
+          <a href="#bundles" aria-label="MTN" title="MTN" class="group bg-amber-400 hover:bg-amber-300 rounded-2xl p-6 flex items-center justify-between transition-all shadow-sm">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-950/70">Network</span>
+              <h3 class="text-xl font-extrabold text-slate-950 mt-0.5">MTN</h3>
+            </div>
+            <span class="w-10 h-10 rounded-full bg-slate-950/10 flex items-center justify-center font-bold text-slate-950 group-hover:translate-x-1 transition-transform">
+              &rarr;
+            </span>
+          </a>
+
+          <!-- Telecel Network -->
+          <a href="#bundles" aria-label="Telecel" title="Telecel" class="group bg-red-600 hover:bg-red-500 rounded-2xl p-6 flex items-center justify-between text-white transition-all shadow-sm">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-red-100/80">Network</span>
+              <h3 class="text-xl font-extrabold mt-0.5">Telecel</h3>
+            </div>
+            <span class="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center font-bold group-hover:translate-x-1 transition-transform">
+              &rarr;
+            </span>
+          </a>
+
+          <!-- AirtelTigo Network -->
+          <a href="#bundles" aria-label="AirtelTigo" title="AirtelTigo" class="group bg-blue-600 hover:bg-blue-500 rounded-2xl p-6 flex items-center justify-between text-white transition-all shadow-sm">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-100/80">Network</span>
+              <h3 class="text-xl font-extrabold mt-0.5">AirtelTigo</h3>
+            </div>
+            <span class="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center font-bold group-hover:translate-x-1 transition-transform">
+              &rarr;
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Value Propositions / Features -->
+      <section id="how-to-buy" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+            1
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Mobile money only</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            MTN, Telecel and AirtelTigo money are all accepted. No card, no account to create.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+            2
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Any number on the network</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Buy for yourself, for family, for a customer. You enter the number at checkout.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+            3
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">If it fails, you get it back</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            A bundle that does not deliver is refunded. Keep the tracking ID and we can find it.
+          </p>
+        </div>
+      </section>
+
+      <!-- Support Banner -->
+      <section id="track" class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <h2 class="text-xl sm:text-2xl font-bold">Stuck on an order?</h2>
+          <p class="mt-1.5 text-sm sm:text-base text-slate-300">
+            Message Trackone Data Hub GH with your tracking ID and we will check it.
+          </p>
+        </div>
+        <a href="https://wa.me/233554642808" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-3 rounded-xl transition-colors">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+          </svg>
+          WhatsApp us
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="about" class="bg-white border-t border-slate-200 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <span aria-hidden="true" class="w-8 h-8 rounded-lg bg-slate-900 text-white font-bold text-base flex items-center justify-center">
+              D
+            </span>
+            <span class="font-bold text-lg text-slate-900">Trackone Data Hub GH</span>
+          </div>
+          <p class="text-sm text-slate-600 max-w-md leading-relaxed">
+            Trackone Data Hub GH is your trusted online store for quality products at affordable prices. We are committed to providing reliable service, genuine products, and a smooth shopping experience for every customer.
+          </p>
+          <div>
+            <a href="https://wa.me/qr/LRKFH5I4JQ3GD1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-4 py-2 rounded-lg transition-colors">
+              Join the WhatsApp group
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop Links -->
+        <div>
+          <p class="font-bold text-sm text-slate-900 uppercase tracking-wider mb-3">Shop</p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li><a href="#home" class="hover:text-slate-900">Home</a></li>
+            <li><a href="#bundles" class="hover:text-slate-900">Buy data</a></li>
+            <li><a href="#checkers" class="hover:text-slate-900">Checkers</a></li>
+            <li><a href="#mashup" class="hover:text-slate-900">MashUp</a></li>
+            <li><a href="#track" class="hover:text-slate-900">Track order</a></li>
+            <li><a href="#how-to-buy" class="hover:text-slate-900">How to buy</a></li>
+            <li><a href="#about" class="hover:text-slate-900">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div>
+          <p class="font-bold text-sm text-slate-900 uppercase tracking-wider mb-3">Contact</p>
+          <ul class="space-y-2.5 text-sm text-slate-600">
+            <li>
+              <a href="tel:0248232842" class="hover:text-slate-900 font-medium">
+                0248232842
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/233554642808" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600 font-medium">
+                WhatsApp (0554642808)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-100 mt-10 pt-6 text-sm text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>&copy; 2026 Trackone Data Hub GH</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a
+    aria-label="Chat on WhatsApp"
+    href="https://wa.me/233554642808?text=Hi%2C%20I%20would%20like%20to%20buy%20data"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fixed bottom-5 right-5 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-105"
+  >
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+  </a>
+
+  <!-- Quick Checkout Modal -->
+  <div id="order-modal" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl">
+      <div class="flex items-center justify-between mb-4">
+        <h3 id="modal-title" class="text-lg font-bold text-slate-900">Order Bundle</h3>
+        <button onclick="closeOrderModal()" class="text-slate-400 hover:text-slate-600 font-bold text-xl">&times;</button>
+      </div>
+      <p class="text-sm text-slate-600 mb-4">
+        Selected: <span id="modal-bundle" class="font-semibold text-slate-900"></span> (<span id="modal-price" class="font-bold text-emerald-600"></span>)
+      </p>
+      <form onsubmit="submitOrder(event)" class="space-y-4">
+        <div>
+          <label for="recipient-phone" class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
+            Recipient Phone Number
+          </label>
+          <input
+            id="recipient-phone"
+            type="tel"
+            required
+            placeholder="e.g. 0557202711"
+            class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
+          />
+        </div>
+        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 rounded-xl transition-colors">
+          Proceed via WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Order modal logic
+    let selectedBundle = '';
+    let selectedPrice = '';
+
+    function openOrderModal(bundle, price) {
+      selectedBundle = bundle;
+      selectedPrice = price;
+      document.getElementById('modal-bundle').textContent = bundle;
+      document.getElementById('modal-price').textContent = price;
+      document.getElementById('order-modal').classList.remove('hidden');
+    }
+
+    function closeOrderModal() {
+      document.getElementById('order-modal').classList.add('hidden');
+    }
+
+    function submitOrder(e) {
+      e.preventDefault();
+      const phone = document.getElementById('recipient-phone').value.trim();
+      const message = encodeURIComponent(
+        `Hi Trackone Data Hub GH, I would like to buy ${selectedBundle} (${selectedPrice}) for number: ${phone}`
+      );
+      window.open(`https://wa.me/233554642808?text=${message}`, '_blank');
+      closeOrderModal();
+    }
+  </script>
+
+</body>
+</html>
